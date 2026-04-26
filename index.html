@@ -148,9 +148,11 @@
             display: flex;
             align-items: baseline;
             gap: 1rem;
-            padding: 0.6rem 0;
+            padding: 0px;
             border-bottom: 1px solid var(--border);
-            transition: background 0.1s;
+            transition: background 0.2s;
+            transition: margin-left 0.2s;
+
         }
 
         .note-item:last-child {
@@ -164,12 +166,7 @@
             flex: 1;
             transition: color 0.15s;
             letter-spacing: 0.02rem;
-            transition: margin-left 0.2s;
-        }
-
-        .note-item a:hover {
-            /* color: var(--accent); */
-            margin-left: 8px;
+            padding: 0.6rem;
         }
 
         .note-item a::before {
@@ -185,6 +182,10 @@
             opacity: 0.5;
             transition: opacity 0.15s;
             flex-shrink: 0;
+        }
+
+        .note-item:hover {
+            margin-left: 8px;
         }
 
         .note-item:hover a::before {
